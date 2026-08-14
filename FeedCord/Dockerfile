@@ -13,8 +13,8 @@ WORKDIR /app
 COPY --from=build /app/publish .
 
 ENTRYPOINT ["dotnet", "FeedCord.dll"]
-RUN mkdir -p /app/config
-COPY FeedCord/config/appsettings.json /app/config/appsettings.json
+RUN mkdir -p /app
+COPY FeedCord/appsettings.json /app/appsettings.json
 
 
 
