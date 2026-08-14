@@ -14,7 +14,7 @@ COPY --from=build /app/publish .
 
 ENTRYPOINT ["dotnet", "FeedCord.dll"]
 RUN mkdir -p /app
-COPY FeedCord/appsettings.json /app/appsettings.json
+COPY FeedCord/appsettings.json /app/FeedCord/appsettings.json
 
 
 
